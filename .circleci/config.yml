@@ -1,0 +1,45 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/prettier-config
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restoring Yarn cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Installing dependencies
+          command: yarn install
+      - save_cache:
+          name: Save Yarn Package cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Run lint check
+          command: yarn lint
+      - run:
+          name: Check code formatting
+          command: yarn prettier
+  release:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: yarn install
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - build
+      - release:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

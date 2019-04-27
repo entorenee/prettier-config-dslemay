@@ -1,0 +1,43 @@
+{
+  "name": "prettier-config-dslemay",
+  "version": "0.0.0-semantically-released",
+  "description": "Prettier config with my personal preferences",
+  "author": "Daniel Lemay <daniel@dslemay.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "formatting",
+    "styleguide"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dslemay/prettier-config-dslemay"
+  },
+  "homepage": "https://github.com/dslemay/prettier-config-dslemay#readme",
+  "bugs": {
+    "url": "https://github.com/dslemay/prettier-config-dslemay/issues"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-dslemay": "^1.1.1",
+    "husky": "^2.1.0",
+    "is-ci-cli": "^1.1.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0"
+  },
+  "peerDependencies": {
+    "prettier": ">=1.17.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "is-ci prettier:check prettier:format",
+    "prettier:check": "prettier --check \"**/*.{js,md}\" --ignore-path .gitignore",
+    "prettier:format": "prettier --write \"**/*.{js,md}\" --ignore-path .gitignore"
+  }
+}
