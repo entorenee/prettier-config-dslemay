@@ -26,7 +26,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "eslint": "^6.3.0",
     "eslint-config-dslemay": "^3.0.0",
-    "husky": "^3.0.5",
+    "husky": "^3.0.9",
     "is-ci-cli": "^1.1.1",
     "lint-staged": "^9.2.5",
     "prettier": "^1.17.0"
