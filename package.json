@@ -22,8 +22,8 @@
     "index.js"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "eslint": "^6.5.1",
     "eslint-config-dslemay": "^3.0.0",
     "husky": "^3.0.9",
