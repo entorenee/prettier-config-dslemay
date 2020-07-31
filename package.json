@@ -24,7 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-dslemay": "^4.1.2",
     "husky": "^4.2.5",
     "is-ci-cli": "^2.1.2",
