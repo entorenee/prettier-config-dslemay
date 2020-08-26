@@ -29,7 +29,7 @@
     "husky": "^4.2.5",
     "is-ci-cli": "^2.1.2",
     "lint-staged": "^10.2.13",
-    "prettier": "^2.1.0"
+    "prettier": "^2.1.1"
   },
   "peerDependencies": {
     "prettier": "^1.19.1 || ^2.0.0"
