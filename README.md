@@ -1,6 +1,6 @@
 # Prettier Config Dslemay
 
-[![CircleCI](https://circleci.com/gh/dslemay/prettier-config-dslemay.svg?style=svg)](https://circleci.com/gh/dslemay/prettier-config-dslemay)
+[![CircleCI](https://circleci.com/gh/entorenee/prettier-config-dslemay.svg?style=svg)](https://circleci.com/gh/entorenee/prettier-config-dslemay)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 Prettier is an excellent tool to reduce bike shedding on code formatting. It ships with reasonable defaults and reduces the time spent thinking about various formatting issues that don't matter in the long term. There are several rules which I prefer to override. As of v1.17 Prettier offers first class support for shared configuration. This package shares my preferred base Prettier configuration.

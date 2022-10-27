@@ -2,7 +2,7 @@
   "name": "prettier-config-dslemay",
   "version": "0.0.0-semantically-released",
   "description": "Prettier config with my personal preferences",
-  "author": "Daniel Lemay <daniel@dslemay.com>",
+  "author": "Skyler Lemay <skyler@skylerlemay.com>",
   "license": "MIT",
   "main": "index.js",
   "keywords": [
@@ -12,11 +12,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dslemay/prettier-config-dslemay"
+    "url": "https://github.com/entorenee/prettier-config-dslemay"
   },
-  "homepage": "https://github.com/dslemay/prettier-config-dslemay#readme",
+  "homepage": "https://github.com/entorenee/prettier-config-dslemay#readme",
   "bugs": {
-    "url": "https://github.com/dslemay/prettier-config-dslemay/issues"
+    "url": "https://github.com/entorenee/prettier-config-dslemay/issues"
   },
   "files": [
     "index.js"
